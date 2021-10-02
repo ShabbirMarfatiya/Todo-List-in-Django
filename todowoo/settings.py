@@ -24,7 +24,7 @@ SECRET_KEY = 'b*!7np)ajjnb#8d-pb#lpv(vqsb71&(vej!af0*ij#wyyr2+0g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+#allowed hosts
 ALLOWED_HOSTS = []
 
 
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'todo',
 ]
-
+#middleware
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
