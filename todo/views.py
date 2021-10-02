@@ -12,6 +12,7 @@ from django.contrib.auth.decorators import login_required
 def home(request):
     return render(request, 'todo/home.html')
 
+# User Sign up
 def signupuser(request):
     if request.method == 'GET':
         return render(request, 'todo/signupuser.html', {'form':UserCreationForm()})
@@ -28,6 +29,7 @@ def signupuser(request):
         else:
             return render(request, 'todo/signupuser.html', {'form':UserCreationForm(), 'error':'Passwords did not match.'})
 
+ # User Login
 def loginuser(request):
     if request.method == 'GET':
         return render(request, 'todo/loginuser.html', {'form':AuthenticationForm()})
