@@ -11,4 +11,5 @@ class Todo(models.Model):
     user = models.ForeignKey(User, on_delete = models.CASCADE)
 
     def __str__(self):
+        print("added")
         return self.title
