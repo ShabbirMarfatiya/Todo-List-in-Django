@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import Todo
-
+#admin bug solving
 class TodoAdmin(admin.ModelAdmin):
     readonly_fields = ('created',)
 
